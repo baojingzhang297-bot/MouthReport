@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 月次ニュースレター | InnoSysTech</title>
+<style>
+  /*
+    Monthly theme plan:
+    01 Ice White #A8D8EA / #1A2744
+    02 Deep Indigo #4B3F8C / #C4B5E0
+    03 Sakura Pink #F4A7B9 / #B5D99C
+    04 Royal Blue #1B4FBF / #E8F4FD
+    05 Fresh Green #2ECC71 / #F0E68C
+    06 Rainy Teal #00897B / #E0F2F1
+    07 Ocean Blue #0288D1 / #FF7043
+    08 Sunset Orange #FF6B35 / #FFD700
+    09 Harvest Gold #D4A017 / #8B2500
+    10 Maple Red #C0392B / #E67E22
+    11 Earth Brown #795548 / #D7CCC8
+    12 Midnight Gold #C9A84C / #0A0F1E
+  */
+  *, *::before, *::after { box-sizing:border-box; }
+  :root {
+    --ink:#1f2933;
+    --muted:#6b7280;
+    --paper:#fbfaf7;
+    --line:#e4ded2;
+    --gold:#c9a84c;
+  }
+  body {
+    margin:0;
+    min-height:100vh;
+    background:
+      radial-gradient(circle at top left, rgba(201,168,76,.13), transparent 32%),
+      linear-gradient(180deg,#f7f4ec 0%,#fbfaf7 44%,#f2efe8 100%);
+    color:var(--ink);
+    font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN','Hiragino Sans',Meiryo,'Yu Gothic',sans-serif;
+    line-height:1.7;
+  }
+  .page {
+    max-width:880px;
+    margin:0 auto;
+    padding:48px 20px 56px;
+  }
+  .hero {
+    background:linear-gradient(135deg,#111827 0%,#243447 56%,#3b4858 100%);
+    border-radius:18px;
+    padding:42px 38px;
+    color:#fff;
+    border:1px solid rgba(201,168,76,.32);
+    box-shadow:0 14px 38px rgba(31,41,51,.18);
+  }
+  .logo {
+    font-size:24px;
+    font-weight:800;
+    letter-spacing:3px;
+    margin-bottom:4px;
+  }
+  .tagline {
+    color:rgba(255,255,255,.66);
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:3px;
+    text-transform:uppercase;
+  }
+  h1 {
+    margin:28px 0 8px;
+    font-size:32px;
+    line-height:1.25;
+    letter-spacing:0;
+  }
+  .lead {
+    margin:0;
+    color:rgba(255,255,255,.78);
+    font-size:14px;
+  }
+  .archive-head {
+    margin:34px 0 16px;
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap:16px;
+  }
+  .archive-head h2 {
+    margin:0;
+    font-size:20px;
+    color:var(--ink);
+  }
+  .archive-head span {
+    color:var(--muted);
+    font-size:12px;
+  }
+  .issues {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:14px;
+  }
+  .issue {
+    --theme:#c9a84c;
+    --theme-soft:#f5efd9;
+    display:block;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:20px;
+    color:inherit;
+    text-decoration:none;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 5px 18px rgba(31,41,51,.08);
+    transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  }
+  .issue::before {
+    content:"";
+    position:absolute;
+    top:0; left:0; right:0;
+    height:5px;
+    background:var(--theme);
+  }
+  .issue:hover {
+    transform:translateY(-2px);
+    border-color:var(--theme);
+    box-shadow:0 10px 26px rgba(31,41,51,.13);
+  }
+  .issue .month {
+    color:var(--ink);
+    font-size:22px;
+    font-weight:800;
+    margin-bottom:6px;
+  }
+  .issue .meta {
+    color:var(--muted);
+    font-size:12px;
+    margin-bottom:14px;
+  }
+  .issue .desc {
+    color:#374151;
+    font-size:13px;
+    margin:0;
+  }
+  .issue .open {
+    display:inline-block;
+    margin-top:18px;
+    color:var(--theme);
+    font-size:12px;
+    font-weight:800;
+  }
+  .theme-2026-05 {
+    --theme:#2ECC71;
+    --theme-soft:#eefaf3;
+    background:linear-gradient(180deg,var(--theme-soft),#fff 42%);
+  }
+  .theme-2026-04 {
+    --theme:#1B4FBF;
+    --theme-soft:#E8F4FD;
+    background:linear-gradient(180deg,var(--theme-soft),#fff 42%);
+  }
+  .footer {
+    margin-top:34px;
+    color:var(--muted);
+    font-size:11px;
+    text-align:center;
+  }
+  @media (max-width:560px) {
+    .page { padding:24px 14px 36px; }
+    .hero { border-radius:14px; padding:32px 24px; }
+    h1 { font-size:26px; }
+    .archive-head { display:block; }
+    .archive-head span { display:block; margin-top:4px; }
+  }
+</style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="logo">InnoSysTech</div>
+      <div class="tagline">AI Solutions Partner</div>
+      <h1>AI 月次ニュースレター</h1>
+      <p class="lead">世界の最新 AI 動向と InnoSysTech の取り組みを月次でお届けします。</p>
+    </section>
+
+    <div class="archive-head">
+      <h2>バックナンバー</h2>
+      <span>新しい月刊はこの一覧に追加していきます</span>
+    </div>
+
+    <section class="issues" aria-label="AI 月次ニュースレター バックナンバー">
+      <a class="issue theme-2026-05" href="innosystech_AI_newsletter_2026年05月.html">
+        <div class="month">2026年5月号</div>
+        <div class="meta">Vol.02 ／ Fresh Green</div>
+        <p class="desc">AI 最新ニュース、業種別 AI 活用事例、InnoSysTech の最新デモ進捗を掲載。</p>
+        <span class="open">月刊を見る →</span>
+      </a>
+
+      <a class="issue theme-2026-04" href="innosystech_AI_newsletter_2026年04月.html">
+        <div class="month">2026年4月号</div>
+        <div class="meta">Vol.01 ／ Royal Blue</div>
+        <p class="desc">AI 月次ニュースレターの創刊号。主要トピックと当社取り組みを紹介。</p>
+        <span class="open">月刊を見る →</span>
+      </a>
+    </section>
+
+    <div class="footer">© 2026 InnoSysTech. All rights reserved.</div>
+  </main>
+</body>
+</html>
