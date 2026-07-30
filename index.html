@@ -24,16 +24,16 @@
   :root {
     --ink:#1f2933;
     --muted:#6b7280;
-    --paper:#f5fbfd;
-    --line:#cfe4f2;
-    --gold:#0288D1;
+    --paper:#fffaf5;
+    --line:#FFD9C2;
+    --gold:#FF6B35;
   }
   body {
     margin:0;
     min-height:100vh;
     background:
-      radial-gradient(circle at top left, rgba(2,136,209,.16), transparent 34%),
-      linear-gradient(180deg,#E1F5FE 0%,#f5fbfd 46%,#eef6fb 100%);
+      radial-gradient(circle at top left, rgba(255,107,53,.16), transparent 34%),
+      linear-gradient(180deg,#FFF4EC 0%,#fffaf5 46%,#FFF4EC 100%);
     color:var(--ink);
     font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN','Hiragino Sans',Meiryo,'Yu Gothic',sans-serif;
     line-height:1.7;
@@ -44,12 +44,12 @@
     padding:48px 20px 56px;
   }
   .hero {
-    background:linear-gradient(135deg,#01579B 0%,#0277BD 54%,#0288D1 100%);
+    background:linear-gradient(135deg,#8E2B13 0%,#FF6B35 55%,#FFB081 100%);
     border-radius:18px;
     padding:42px 38px;
     color:#fff;
-    border:1px solid rgba(225,245,254,.42);
-    box-shadow:0 14px 38px rgba(1,87,155,.18);
+    border:1px solid rgba(255,244,236,.42);
+    box-shadow:0 14px 38px rgba(142,43,19,.18);
   }
   .logo {
     font-size:24px;
@@ -161,6 +161,11 @@
     --theme-soft:#E1F5FE;
     background:linear-gradient(180deg,var(--theme-soft),#fff 42%);
   }
+  .theme-2026-08 {
+    --theme:#FF6B35;
+    --theme-soft:#FFF4EC;
+    background:linear-gradient(180deg,var(--theme-soft),#fff 42%);
+  }
   .theme-2026-04 {
     --theme:#1B4FBF;
     --theme-soft:#E8F4FD;
@@ -196,6 +201,13 @@
     </div>
 
     <section class="issues" aria-label="AI 月次ニュースレター バックナンバー">
+      <a class="issue theme-2026-08" href="8%20月/August.html">
+        <div class="month">2026年8月号</div>
+        <div class="meta">Vol.05 ／ Sunset Orange</div>
+        <p class="desc">AI 最新ニュース、業種別 AI 活用事例、InnoSysTech の AI 共創型ショールーム「AXIS」開設を掲載。</p>
+        <span class="open">月刊を見る →</span>
+      </a>
+
       <a class="issue theme-2026-07" href="7%20月/july.html">
         <div class="month">2026年7月号</div>
         <div class="meta">Vol.04 ／ Ocean Blue</div>
