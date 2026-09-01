@@ -21,19 +21,20 @@
     12 Midnight Gold #C9A84C / #0A0F1E
   */
   *, *::before, *::after { box-sizing:border-box; }
+  /* ── 九月配色：Harvest Gold 稲穂 #D4A017 × 深赤 #8B2500（稲刈りの季節）── */
   :root {
-    --ink:#1f2933;
-    --muted:#6b7280;
-    --paper:#fffaf5;
-    --line:#FFD9C2;
-    --gold:#FF6B35;
+    --ink:#3B3018;
+    --muted:#A68C54;
+    --paper:#FFFDF6;
+    --line:#E9D8A6;
+    --gold:#D4A017;
   }
   body {
     margin:0;
     min-height:100vh;
     background:
-      radial-gradient(circle at top left, rgba(255,107,53,.16), transparent 34%),
-      linear-gradient(180deg,#FFF4EC 0%,#fffaf5 46%,#FFF4EC 100%);
+      radial-gradient(circle at top left, rgba(212,160,23,.16), transparent 34%),
+      linear-gradient(180deg,#FAF3DF 0%,#FFFDF6 46%,#FAF3DF 100%);
     color:var(--ink);
     font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN','Hiragino Sans',Meiryo,'Yu Gothic',sans-serif;
     line-height:1.7;
@@ -44,12 +45,12 @@
     padding:48px 20px 56px;
   }
   .hero {
-    background:linear-gradient(135deg,#8E2B13 0%,#FF6B35 55%,#FFB081 100%);
+    background:linear-gradient(135deg,#8B2500 0%,#D4A017 55%,#E8C766 100%);
     border-radius:18px;
     padding:42px 38px;
     color:#fff;
-    border:1px solid rgba(255,244,236,.42);
-    box-shadow:0 14px 38px rgba(142,43,19,.18);
+    border:1px solid rgba(250,243,223,.42);
+    box-shadow:0 14px 38px rgba(139,37,0,.18);
   }
   .logo {
     font-size:24px;
@@ -74,6 +75,16 @@
     margin:0;
     color:rgba(255,255,255,.78);
     font-size:14px;
+  }
+  .badge {
+    display:inline-block;
+    margin-top:14px;
+    background:rgba(255,255,255,.13);
+    border:1px solid rgba(255,255,255,.28);
+    border-radius:20px;
+    padding:4px 16px;
+    font-size:11px;
+    color:#FAF3DF;
   }
   .archive-head {
     margin:34px 0 16px;
@@ -161,6 +172,11 @@
     --theme-soft:#E1F5FE;
     background:linear-gradient(180deg,var(--theme-soft),#fff 42%);
   }
+  .theme-2026-09 {
+    --theme:#D4A017;
+    --theme-soft:#FAF3DF;
+    background:linear-gradient(180deg,var(--theme-soft),#fff 42%);
+  }
   .theme-2026-08 {
     --theme:#FF6B35;
     --theme-soft:#FFF4EC;
@@ -193,6 +209,7 @@
       <div class="tagline">AI Solutions Partner</div>
       <h1>AI 月次ニュースレター</h1>
       <p class="lead">世界の最新 AI 動向と InnoSysTech の取り組みを月次でお届けします。</p>
+      <div class="badge">🌾 2026年9月号 ｜ Vol.06 ／ 稲刈りの季節</div>
     </section>
 
     <div class="archive-head">
@@ -201,6 +218,13 @@
     </div>
 
     <section class="issues" aria-label="AI 月次ニュースレター バックナンバー">
+      <a class="issue theme-2026-09" href="9%20月/September.html">
+        <div class="month">2026年9月号</div>
+        <div class="meta">Vol.06 ／ Harvest Gold</div>
+        <p class="desc">AI 最新ニュース、業種別 AI 活用事例、大連「AXIS」オープン後初月のご来館レポートを掲載。</p>
+        <span class="open">月刊を見る →</span>
+      </a>
+
       <a class="issue theme-2026-08" href="8%20月/August.html">
         <div class="month">2026年8月号</div>
         <div class="meta">Vol.05 ／ Sunset Orange</div>
