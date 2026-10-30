@@ -21,20 +21,20 @@
     12 Midnight Gold #C9A84C / #0A0F1E
   */
   *, *::before, *::after { box-sizing:border-box; }
-  /* ── 十月配色：Maple Red 紅葉 #C0392B × 橙金 #E67E22（秋の紅葉）── */
+  /* ── 十一月配色：Earth Brown 土 #795548 × 枯草 #D7CCC8（晩秋の静寂）── */
   :root {
-    --ink:#3B221E;
-    --muted:#B3766B;
+    --ink:#3E2723;
+    --muted:#A1887F;
     --paper:#FFFDFA;
-    --line:#F0D0C5;
-    --gold:#C0392B;
+    --line:#E3DAD3;
+    --gold:#795548;
   }
   body {
     margin:0;
     min-height:100vh;
     background:
-      radial-gradient(circle at top left, rgba(192,57,43,.15), transparent 34%),
-      linear-gradient(180deg,#FAF0ED 0%,#FFFDFA 46%,#FAF0ED 100%);
+      radial-gradient(circle at top left, rgba(121,85,72,.16), transparent 34%),
+      linear-gradient(180deg,#F5F0EC 0%,#FFFDFA 46%,#F5F0EC 100%);
     color:var(--ink);
     font-family:'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN','Hiragino Sans',Meiryo,'Yu Gothic',sans-serif;
     line-height:1.7;
@@ -45,12 +45,12 @@
     padding:48px 20px 56px;
   }
   .hero {
-    background:linear-gradient(135deg,#7B241C 0%,#C0392B 55%,#E67E22 100%);
+    background:linear-gradient(135deg,#3E2723 0%,#795548 55%,#A1887F 100%);
     border-radius:18px;
     padding:42px 38px;
     color:#fff;
-    border:1px solid rgba(250,240,237,.42);
-    box-shadow:0 14px 38px rgba(123,36,28,.20);
+    border:1px solid rgba(245,240,236,.42);
+    box-shadow:0 14px 38px rgba(62,39,35,.20);
   }
   .logo {
     font-size:24px;
@@ -84,7 +84,7 @@
     border-radius:20px;
     padding:4px 16px;
     font-size:11px;
-    color:#FAF0ED;
+    color:#F5F0EC;
   }
   .archive-head {
     margin:34px 0 16px;
@@ -172,6 +172,11 @@
     --theme-soft:#E1F5FE;
     background:linear-gradient(180deg,var(--theme-soft),#fff 42%);
   }
+  .theme-2026-11 {
+    --theme:#795548;
+    --theme-soft:#F5F0EC;
+    background:linear-gradient(180deg,var(--theme-soft),#fff 42%);
+  }
   .theme-2026-10 {
     --theme:#C0392B;
     --theme-soft:#FAF0ED;
@@ -214,7 +219,7 @@
       <div class="tagline">AI Solutions Partner</div>
       <h1>AI 月次ニュースレター</h1>
       <p class="lead">世界の最新 AI 動向と InnoSysTech の取り組みを月次でお届けします。</p>
-      <div class="badge">🍁 2026年10月号 ｜ Vol.07 ／ 秋の紅葉</div>
+      <div class="badge">🍂 2026年11月号 ｜ Vol.08 ／ 晩秋の静寂</div>
     </section>
 
     <div class="archive-head">
@@ -223,6 +228,13 @@
     </div>
 
     <section class="issues" aria-label="AI 月次ニュースレター バックナンバー">
+      <a class="issue theme-2026-11" href="11%E6%9C%88/November.html">
+        <div class="month">2026年11月号</div>
+        <div class="meta">Vol.08 ／ Earth Brown</div>
+        <p class="desc">AI 最新ニュース、業種別 AI 活用事例、ショールーム「AXIS」大連から東京への移行準備と自社AI技術によるPR映像を掲載。</p>
+        <span class="open">月刊を見る →</span>
+      </a>
+
       <a class="issue theme-2026-10" href="10%E6%9C%88/October.html">
         <div class="month">2026年10月号</div>
         <div class="meta">Vol.07 ／ Maple Red</div>
